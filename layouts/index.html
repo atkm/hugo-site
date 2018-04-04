@@ -1,0 +1,12 @@
+{{ partial "header.html" . }}
+<article class="p-article">
+  <header>
+    <h1>{{ .Title }}</h1>
+    </header>
+    {{ with .Params.thumbnail }}
+    <img src="{{ . }}" alt="thumbnail" class="p-article__thumbnail">
+    {{ end }}
+    <section id="js-article" class="p-article__body">
+    {{ .Content }}
+    </section>
+    </article>

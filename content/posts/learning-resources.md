@@ -21,7 +21,7 @@ Expositions on machine learning that are freely accessible (like the ones on Cou
   * The lectures provide good balance of intuition and mathematical detail.
   * His exposition on MCMC is the best I could find online.
 
-- There is an online textbook with a gitbook-like (blue) interface that seemed to be written by someone with a pure math background. I can't find it nor remember its title.
+- There is an online textbook with a gitbook (blue) interface that seems to be written by someone with a pure math background. I can't find it nor remember its title.
 
 ### Stat
 - [Cosma Shalizi](http://www.stat.cmu.edu/~cshalizi/) (CMU)
@@ -80,6 +80,10 @@ Expositions on machine learning that are freely accessible (like the ones on Cou
 ## CS and SWE (topics not covered above)
 - MIT 6.005 Software Construction (OCW)
   * Software engineering best practices. What constitutes a good specification and test? Immutability. Interfaces. Equality. Specification and tests for abstract data types and concurrent programs.
+
+- [Practical Concurrent and Parallel Programming](http://www.itu.dk/people/sestoft/itu/PCPP/E2016/)
+  * Covers most of "Java Concurrency in Practice" by Goetz with a Java 8 twist, and a bit of "The Art of Multiprocessor Programming".
+  * Each week comes with a simple coding assignment, which takes about an hour.
 
 - Functional Programming in Scala Specialization (Coursera)
   * Assignments are fun (i.e. moderately challenging) unlike most Coursera courses.

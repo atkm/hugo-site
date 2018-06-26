@@ -120,12 +120,12 @@ There are recent developments in the field (
 The techniques described in the linked articles seem successful, but too involved for our purpose.
 These are some other keyword extraction techniques that are readily available:
 
-- TextRank: application of Google's PageRank algorithm to graph of sentences, or, in our case, n-grams.
 - tf-idf: a modification of bag-of-words to put greater weights on rare words.
 - Latent Semantic Indexing (LSI or LSA): a low-rank approximation of bag-of-words (or tf-idf) by taking its the principal components. pLSI and Latent Dirichlet Allocation extends LSI.
+- TextRank: application of Google's PageRank algorithm to graph of sentences, or, in our case, n-grams.
 - Rapid Automatic Keyword Extraction
 
-I tried TextRank and tf-idf, and the latter works reasonably well.
+I tried tf-idf and TextRank, and the former works reasonably well.
 This is the outline of our tf-idf-based keyword extraction algorithm:
 
 1. Load the pickled DataFrame and extract articles of a category. 

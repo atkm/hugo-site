@@ -1,6 +1,7 @@
 baseurl = "http://akumano.xyz/"
 languageCode = "en-us"
 Title = "Atsuya Kumano"
+theme="hugo_theme_pickles"
 # Copyright notice. This is displayer in the footer.
 #copyright = "&copy; Copyright notice"
 

@@ -107,11 +107,9 @@ This components is hidden until keywords are received and it shows a spinner gif
     })
 </details>
 
-<!-- need to escape jinja templating -->
 <details open>
 <summary>`index.html` - div `keywords-result`</summary>
 
-{% raw %} 
     <div class="col-sm-5 col-sm-offset-1">
       <div id='keywords-result'>
         <table class='table table-striped' v-if='show'>
@@ -133,7 +131,6 @@ This components is hidden until keywords are received and it shows a spinner gif
         v-if='loading'>
       </div>
     </div>
-{% endraw %}
 </details>
 
 Finally, include packages in the header and `main.js` in the body.
@@ -141,7 +138,6 @@ Finally, include packages in the header and `main.js` in the body.
 <details open>
 <summary>`index.html` - header</summary>
 
-{% raw %}
     <head>
       <title>{ keywords(x) | x \in {math research area} }</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -158,15 +154,12 @@ Finally, include packages in the header and `main.js` in the body.
       <script src="https://unpkg.com/vue"></script>
       <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     </head>
-{% endraw %}
 </details>
 
 <details open>
 <summary>`index.html` - somewhere in body</summary>
     
-{% raw %}
     <script src="{{ url_for('static', filename='main.js') }}"></script>
-{% endraw %}
 </details>
 
 ### 5.2 Configure the root endpoint
@@ -224,7 +217,7 @@ Also, add `STATIC_PATH = os.path.join(basedir, 'static/')` in the base Config cl
 
 ### 5.3. Run it locally
 Our app is ready to run locally!
-Start an instance of Redis server (usually `redis-server`), followed by `python worker.py` which starts a [worker](http://python-rq.org/docs/workers/) that takes jobs from a Redis queue.
+Start an instance of Redis server (usually `redis-server`), followed by `python worker.py` which starts a Redis worker that takes jobs from a Redis queue.
 Finally, run `python manage.py runserver`.
 
 ## 6. Deploy to Heroku.

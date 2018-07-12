@@ -14,10 +14,10 @@ Outline:
   
   1. Scrape articles from arXiv (Part 1; we are here)
   2. Keyword extraction prototype in Pandas (Part 1)
-  3. Modify keyword extraction to use Postgres ([Part 2]({filename}./arxiv-keyword-extraction-part2.md))
+  3. Modify keyword extraction to use Postgres ([Part 2](/posts/arxiv-keyword-extraction-part2))
   4. Configure Flask and Redis (Part 2)
-  5. Build UI in Vue.js (Part 3)
-  6. Deploy to Heroku
+  5. Build UI in Vue.js ([Part 3](/posts/arxiv-keyword-extraction-part3))
+  6. Deploy to Heroku (Part 3)
 
 My Flask setup is based on the one described in this tutorial: 
 [Flask by Example](https://realpython.com/blog/python/flask-by-example-part-1-project-setup/).
@@ -246,4 +246,4 @@ It extracts top 2 keywords from each cluster.
 Our prototype is ready.
 Run it with your favorite math category to check that the algorithm returns reasonable keywords.
 In the next article, we modify the function to use Postgres so it is deployment-ready.
-Go to [Part 2]({filename}./arxiv-keyword-extraction-part2.md)
+[Go to Part 2](/posts/arxiv-keyword-extraction-part2).

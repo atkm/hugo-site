@@ -3,12 +3,12 @@ title = "Keyword Extraction from arXiv - Part 2"
 date = "2017-10-12"
 +++
 
-In [Part 1]({filename}./arxiv-keyword-extraction-part1.md), we developed a keyword extraction algorithm.
+In [Part 1](/posts/arxiv-keyword-extraction-part1), we developed a keyword extraction algorithm.
 The next step is to modify the algorithm to use database.
 Configuring Postgres is more involved than in Flask by Example, since we need models to store article data.
-The following diagram shows what our finished product will look like.
+The following diagram shows the architecture of our system.
 
-![App diagram]({filename}/images/keyword-extraction-diagram.svg)
+![App diagram](/images/keyword-extraction-diagram.svg)
 
 We use the end product of [Flask by Example](https://realpython.com/blog/python/flask-by-example-part-1-project-setup/) tutorial as a boilerplate.
 Complete Part 1-4 of Flask by Example, or clone [the repo](https://github.com/realpython/flask-by-example) of and configure Postgres by following these steps:
@@ -285,4 +285,4 @@ The /results endpoint is configured to handle the two cases.
 We are done rewriting our extraction algorithm to use Postgres.
 This is the function that we will push to Heroku.
 All that remains is to create the UI that communicates with Flask.
-Go to [Part 3]({filename}./arxiv-keyword-extraction-part3.md)
+[Go to Part 3](/posts/arxiv-keyword-extraction-part3).

@@ -106,6 +106,10 @@ Expositions on machine learning that are freely accessible (like the ones on Cou
   Topics covered are: fork-join, race conditions, barriers and phasers, chucking in parallel computing, structured and unstructured locks, liveness, critical section, object-based isolation, monitor pattern, actor model, linearizability, pipeline parallelism,  pub-sub, message passing model, client-server.
   * Programming assignments are "fill-in-the-blank" style, and not edifying --- except the assignments on parallel Boruvka MST and Sieve of Eratosthenes, which are fun.
 
+- Computer Networks (David Wetherall, U of W)
+  * An overview of networking from the physical layer all the way up to the application layer.
+  * [Video lectures](http://media.pearsoncmg.com/ph/streaming/esm/tanenbaum5e_videonotes/tanenbaum_videoNotes.html). There used to be a course on Coursera based on the same videos.
+
 - Cloud Computing Applications Part 1 & 2 by UIUC (Coursera)
   * Overview of the "big data" ecosystem. Gives brief descriptions of major technologies (Ceph, HBase, Kafka, etc.) and vendors (e.g. Hortonworks, Cloudera).
 

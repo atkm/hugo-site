@@ -42,7 +42,7 @@ theme="hugo_theme_pickles"
 
 [[menu.main]]
     name = "About"
-    url = "/about"
+    url = "/"
     weight = 1
 
 [[menu.main]]

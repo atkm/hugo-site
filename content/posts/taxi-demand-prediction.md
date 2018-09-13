@@ -145,6 +145,11 @@ If `unscaled predictions = max(counts) * scaled predictions`, then one can show 
 
 ## 4. Models and Results
 
+### 4.0 Modeling
+
+Whether to model the variables as continuous or categorical.
+Location and datetime variables need to be treated non-linearly.
+
 ### 4.1 Summary of Results
 
 In all models, points with lower counts are over-estimated, and those with higher counts are under-estimated as shown in the residual plots in the following sections.
@@ -152,18 +157,25 @@ The baseline model, which does not use weather data, shows the best performance.
 In addition, the baseline model trains much faster than the random forest model, which can have quadratic time complexity in the number of samples.
 
 Statistics.
-The models were trained on a subset of the 2014 data of size 6,000,000 (500,000 each month * 12 months), and tested on a subset of the 2015 of the same size.
 
-Baseline model:
+Baseline model.
+Trained on a subset of the 2014 data of size 6,000,000 (500,000 each month * 12 months), and tested on a subset of the 2015 of the same size.
 
 - 01m11s to train; 05m11s to predict.
 - scaled RMSE:  0.031028932423957583
 - RMSE:  4.0838978039637
-- Residual stats: mean -0.092445; std 4.082855
+- Residual stats (unscaled): mean -0.092445; std 4.082855
+- Residual stats (scaled): mean -0.004678; std 0.030674
 
 Random Forest:
 
-- result pending
+- Parameters used: numTrees = 100; maxDepth = 30.
+- More than 10 hours to train on a set of size 5,000,000.
+    Since the time complexity of training can grow quadratically, training on a set of size 6,000,000 as we do for the baseline model is unrealistic.
+- Prediction on a set of size 500,000 takes 32s.
+- scaled RMSE: 0.041826952672794036
+- Residual stats (scaled): mean -0.004084; std 0.041628
+
 
 ### 4.2 Baseline Model
 The model and its analyses are found in [this notebook](https://github.com/atkm/taxi-demand-prediction/blob/master/Baseline%20Prediction%20Model.ipynb).
@@ -198,6 +210,9 @@ None of these seems to be a promising direction.
 
 ### 4.3 Random Forest Model
 
+We did a 5-fold cross-validation on a small training set to tune numTrees, maxDepth, and minInstancesPerNode.
+Changing minInstancesPerNode did not affect model performance.
+
 Since the random forest model requires far more computational resources than the baseline model, we implemented the model in PySpark + MLlib and ran on GCP DataProc.
 The DataProc image version 1.3 comes with Python 3.4, although the cluster is configured to use Python 2.7 by default.
 We configured the cluster to use Python 3 with this [initialization action](https://github.com/atkm/taxi-demand-prediction/blob/master/python3-initscript.sh).
@@ -206,14 +221,20 @@ We configured the cluster to use Python 3 with this [initialization action](http
 ## Conclusion and Future Work
 
 The best model is the baseline model which recorded 0.031 as its scaled RMSE.
+Training a random forest model takes hundreds of times as long as the baseline model.
 The average max(counts) in an hour is about 1200, so this RMSE value corresponds to a standard error of 1200 * 0.031 = 37.2 (counts) per cell per hour.
 
 To build on the baseline model:
 
 - Keep searching for factors that explains the variance in counts for each (location, hour, weekday) tuple.
+- Make the `predict` function faster.
+    In the current implementation, it looks for a (location, hour, weekday) key in a multi-index DataFrame.
+    Is it the case that this implementation is effectively equivalent to a hash table lookup?
+    Otherwise, re-implement the function using a hash map.
 - kNN to smooth out predictions. What is an appropriate metric for the space of (location, hour, weekday) tuple?
 - Interactions of variables.
 
 To build on the random forest model:
 
 - Try modeling the location and/or datetime variables as categoricals.
+- Interactions of variables.

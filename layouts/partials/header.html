@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
 {{ partial "head.html" . }}
+{{ if .Params.mathjax}}{{ partial "mathjax_support.html" . }}{{ end }}
 <body>
   {{ partial "menu.html" . }}
   <a href="#main" class="skip-link p-screen-reader-text">Skip to content</a>

@@ -10,10 +10,10 @@ mathjax = true
 In \\( \mathbb{R}^n \\) where \\( n \\) is large,
 
 - The volume of the unit ball goes to 0 as the dimension goes to infinity.
-- Most of the volume of a high-dimensional ball is concentrated around its shell.
+- Most of the volume of a n-ball is concentrated around its boundary.
 - Pick two vectors on the surface of the unit ball independently.
 The two are orthogonal with high probability.
-- Johnson-Lindenstrauss lemma: a set of points can be embedded (almost isometrically w.r.t. \\( L_2 \\)) into a space of a much lower dimension.
+- Johnson-Lindenstrauss lemma: a set of points can be embedded almost isometrically w.r.t. \\( L_2 \\) into a space of a much lower dimension.
 The \\( L_1 \\) analogue doesn't hold.
 Look up fast JL transform.
 - Distances between points are concentrated: \\( \frac{ \max\_{x, y} d(x,y) - \min\_{x, y} d(x,y) } { \min\_{x, y} d(x,y) } \to 0 \\) where \\( d \\) is the \\( L_p \\) norm where \\( p \geq 1 \\).

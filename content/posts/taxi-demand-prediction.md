@@ -218,7 +218,7 @@ The DataProc image version 1.3 comes with Python 3.4, although the cluster is co
 We configured the cluster to use Python 3 with this [initialization action](https://github.com/atkm/taxi-demand-prediction/blob/master/python3-initscript.sh).
 
 
-## Conclusion and Future Work
+## 5. Conclusion and Future Work
 
 The best model is the baseline model which recorded 0.031 as its scaled RMSE.
 Training a random forest model takes hundreds of times as long as the baseline model.

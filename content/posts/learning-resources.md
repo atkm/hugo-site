@@ -22,6 +22,7 @@ Expositions on machine learning that are freely accessible (like the ones on Cou
   * His exposition on MCMC is the best I could find online.
 
 - There is an online textbook with a gitbook (blue) interface that seems to be written by someone with a pure math background. I can't find it nor remember its title.
+    (Update: maybe [this](https://jeremykun.com/main-content/)?)
 
 ### Stat
 - [Cosma Shalizi](http://www.stat.cmu.edu/~cshalizi/) (CMU)

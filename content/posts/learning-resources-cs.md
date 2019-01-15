@@ -14,6 +14,7 @@ Beyond CMU 15-213.
     * Lab assignments are done in Go. Tons of debugging concurrency issues.
         0. Go warm-up. A simple key-value database server.
         1. Implement a subset of TCP starting with UDP.
+            Build a work distribution application on top of the protocol.
         2. (WIP) Raft 
         3. ?
 
@@ -30,12 +31,15 @@ Beyond CMU 15-213.
     * This course is a pre-req to [CMU 15-721 Advanced Database Systems](http://15721.courses.cs.cmu.edu/), which covers in-memory systems. The first lecture of the advanced course (History of Database Systems) is a fun watch.
     * Alternatives are courses that use SimpleDB assignments (e.g. MIT 6.830, HMC CS133, U of W CSE444, Berkeley CS186).
 
+- [CMU 15-418 Parallel Computer Architecture](http://15418.courses.cs.cmu.edu/spring2016/)
+    * Parallel programing models and their implementations in software as well as hardware; cache coherence
+    * Video lectures available
+
 - Other systems courses
     * CMU courses tend not to make starter code public, while Stanford and MIT are much more likely to have theirs available to the public.
     * Networks: CMU 15-441 (next: Spring 2019), Stanford CS144
     * Compilers: CMU 15-411 (next: Fall 2019?), Stanford CS143, MIT 6.035, Harvard CS153
     * Distributed systems: CMU 15-440 Spring (differs from the Fall version), MIT 6.824
-    * CMU 15-418 Parallel Computer Architecture. Video lectures available.
 
 ## Intro (Done)
 Courses that are usually covered in the 1st and 2nd years of a CS curriculum (ref: [CMU](https://www.csd.cs.cmu.edu/sample-undergraduate-course-sequence)). 

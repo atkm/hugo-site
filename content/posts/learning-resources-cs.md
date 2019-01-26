@@ -1,9 +1,9 @@
 +++
 title = "Learning Resources - Computer Science (Systems)"
-date = "2019-01-11"
+date = "2018-12-06"
 +++
 Freely available online resources that I've found useful for learning computer science, especially systems.
-Initially posted on 2018-12-06.
+Most recently updated on 2019-01-25.
 
 ## Systems
 Beyond CMU 15-213.
@@ -18,11 +18,6 @@ Beyond CMU 15-213.
         2. (WIP) Raft 
         3. ?
 
-- Stanford CS 140 (Operating systems) (Ongoing)
-    * The text (Anderson & Dahlin, Operating Systems: Principles and Practice) is readable.
-    * Alternatives are Berkeley CS162 (also uses Pintos, non-Pintos assignments overlap with 15-213), Harvard CS161 (uses OS/161), ops-class.org (uses OS/161).
-        CMU 15-410 (next: Spring 2019) doesn't make all projects available for non-CMU people.
-
 - [CMU 15-445 Intro to Database Systems](http://15445.courses.cs.cmu.edu/)
     * Great lecturer
     * Video lectures from Fall 2017 as well as Fall 2018 are available.
@@ -32,14 +27,21 @@ Beyond CMU 15-213.
     * Alternatives are courses that use SimpleDB assignments (e.g. MIT 6.830, HMC CS133, U of W CSE444, Berkeley CS186).
 
 - [CMU 15-418 Parallel Computer Architecture](http://15418.courses.cs.cmu.edu/spring2016/)
-    * Parallel programing models and their implementations in software as well as hardware; cache coherence
+    * Topics: parallel programing models and their implementations in software as well as hardware, cache coherence, interconnect, granularity of synchronization,
+        heterogeneous architecture, domain-specific parallel programming systems, memory/cache contention and throughput, costs of moving data,
+        (possible) convergence of scientific/high-performance computing and data-intensive/distributed computing,
+    * Recurring themes: locality, locality, locality, bandwidth limits, pipelining,
+        hardware technologies that software programmers benefit from being aware of
     * Video lectures available
 
 - Other systems courses
     * CMU courses tend not to make starter code public, while Stanford and MIT are much more likely to have theirs available to the public.
+    * OS: Stanford CS140, Harvard CS161 (OS/161), MIT 6.828 (JOS).
+        CMU 15-410 doesn't make all projects available for non-CMU people.
+        Text -- Anderson & Dahlin, Operating Systems: Principles and Practice
     * Networks: CMU 15-441 (next: Spring 2019), Stanford CS144
     * Compilers: CMU 15-411 (next: Fall 2019?), Stanford CS143, MIT 6.035, Harvard CS153
-    * Distributed systems: CMU 15-440 Spring (differs from the Fall version), MIT 6.824
+    * Distributed systems: MIT 6.824
 
 ## Intro (Done)
 Courses that are usually covered in the 1st and 2nd years of a CS curriculum (ref: [CMU](https://www.csd.cs.cmu.edu/sample-undergraduate-course-sequence)). 

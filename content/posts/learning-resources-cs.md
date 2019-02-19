@@ -3,20 +3,20 @@ title = "Learning Resources - Computer Science (Systems)"
 date = "2018-12-06"
 +++
 Freely available online resources that I've found useful for learning computer science, especially systems.
-Most recently updated on 2019-01-25.
+Most recently updated on 2019-02-18.
 
 ## Systems
 Beyond CMU 15-213.
 
-- [CMU 15-440 (Fall version)](https://www.synergylabs.org/courses/15-440/syllabus.html) (Ongoing)
+- [CMU 15-440 (Fall version)](https://www.synergylabs.org/courses/15-440/syllabus.html)
     * The textbook (Van Steen & Tanenbaum) is readable.
         The slides are informative as supplements to corresponding textbook chapters and referenced articles.
     * Lab assignments are done in Go. Tons of debugging concurrency issues.
-        0. Go warm-up. A simple key-value database server.
+        0. Go warm-up. A simple key-value server.
         1. Implement a subset of TCP starting with UDP.
             Build a work distribution application on top of the protocol.
-        2. (WIP) Raft 
-        3. ?
+        2. Raft 
+        3. Sharded key-value server
 
 - [CMU 15-445 Intro to Database Systems](http://15445.courses.cs.cmu.edu/)
     * Great lecturer
@@ -39,7 +39,7 @@ Beyond CMU 15-213.
     * OS: Stanford CS140, Harvard CS161 (OS/161), MIT 6.828 (JOS).
         CMU 15-410 doesn't make all projects available for non-CMU people.
         Text -- Anderson & Dahlin, Operating Systems: Principles and Practice
-    * Networks: CMU 15-441 (next: Spring 2019), Stanford CS144
+    * Networks: CMU 15-441, Stanford CS144
     * Compilers: CMU 15-411 (next: Fall 2019?), Stanford CS143, MIT 6.035, Harvard CS153
     * Distributed systems: MIT 6.824
 

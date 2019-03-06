@@ -6,24 +6,27 @@ draft = true
 
 ## Model Serving
 
-Some models have a larger memory footprint than others.
+Topics:
 
-PMML, PFA, JPMML
+- Standards: PMML (JPMML is a Java implementation of the standard), PFA (supposed to be a successor of PMML).
+    Some ML systems (Spark, Tensorflow) have its own model format.
+- Some models have a larger memory footprint than others.
+    A KNN model, for example, has the size of the data it is trained on.
+- Deployment options:
+    + Option 1: Deploy as an http service;
+    + Option 2: Deploy as an operator in a streaming system.
+        If a very low latency is a requirement, deploying the model as an operator may be preferable, as issuing a http request for each data point is more expensive.
+        In addition, when deployed as an operator, the model benefits from functions that the stream processing system provides, such as fault tolerance and resource management.
+- Model update options:
+    + Online learning.
+    + Hot-loading a model.
 
-Option 1: Deploy as an http service;
-Option 2: Deploy as an operator in a streaming system.
-If a very low latency is a requirement, deploying the model as an operator may be preferable, as issuing a http request for each data point is expensive.
-In addition, when deployed as an operator, the model benefits from functions that the stream processing system provides, such as fault tolerance and resource management.
+Refs:
 
-Whether to support online learning or not.
-
-Hot-loading a model
-
-[FLIP-23](https://cwiki.apache.org/confluence/display/FLINK/FLIP-23+-+Model+Serving).
+- [FLIP-23](https://cwiki.apache.org/confluence/display/FLINK/FLIP-23+-+Model+Serving).
 The document also discusses implementing model training as well as model serving.
 Two linked documents---"Flink ML Roadmap" and "Flink-MS"---are also worth reading.
-
-Boris Lublinsky's book "Serving Machine Learning Models", and [talk](https://www.youtube.com/watch?v=YmrCv5onW_E).
+- Boris Lublinsky's book "Serving Machine Learning Models", and [talk](https://www.youtube.com/watch?v=YmrCv5onW_E).
 
 # The System
 
@@ -47,16 +50,18 @@ There is no reverse geocoding library with a small footprint.
 Nominatim seems to be the most practical solution.
 Another solution is to set up a PostGIS server.
 
+One option is to include a Nominatim service in each predictor node.
+Another is to create a stand-alone Nominatim service that predictor nodes query via http requests.
 
 ## Demand Prediction Pipeline
 
-Confusion around exactly-once guarantee that Kafka Streaming has.
-The resulting PMML file is about 5MB with .
+Confusion around exactly-once guarantee that Kafka Streaming makes => Kafka Streaming suppors exactly-once semantics.
+The resulting PMML file is about 5MB.
 
 ## Trade-offs
+- Reverse Geocode or Grids.
 - When to join data
 - Beam or Not Beam; Cloud Dataflow or Flink; the choice of streaming systems... There are so many products in this space, 
-- Reverse Geocode or Grids
 - Whether the prediction pipeline should have been implemented as a batch processor.
 - Choice of the prediction model
 - Using Kafka instead of a SQL database system.

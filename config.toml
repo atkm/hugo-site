@@ -1,4 +1,4 @@
-baseurl = "http://akumano.xyz/"
+baseurl = "http://akumano.site/"
 languageCode = "en-us"
 Title = "Atsuya Kumano"
 theme="hugo_theme_pickles"

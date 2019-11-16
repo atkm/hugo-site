@@ -3,7 +3,7 @@ title = "Learning Resources - Computer Science (Systems)"
 date = "2018-12-06"
 +++
 Freely available online resources that I've found useful for learning computer science, especially systems.
-Most recently updated on 2019-02-18.
+Last updated on 2019-11-16.
 
 ## Systems
 Beyond CMU 15-213.
@@ -33,6 +33,16 @@ Beyond CMU 15-213.
     * Recurring themes: locality, locality, locality, bandwidth limits, pipelining,
         hardware technologies that software programmers benefit from being aware of
     * Video lectures available
+
+- [ETH Design of Digital Circuits](https://safari.ethz.ch/digitaltechnik/spring2019)
+    * The first third of the course covers some basics of circuits.
+        The rest covers computer architecture topics: pipelining, out-of-order execution, branch prediction,
+            VLIW, systolic arrays, 
+    * Assignments are done with Verilog on an FPGA.
+        They are rudimentary compared with what is discussed in lectures---writing a single-cycle MIPS is the final assignment---and are pretty straightforward.
+        A follow-up [course](http://www.archive.ece.cmu.edu/~ece447/s15/doku.php?id=labs) has assignments on topics from the second half of the course (pipelining, branch prediction, cache coherence).
+    * Computer architecture [courses](https://people.inf.ethz.ch/omutlu/teaching.html) from the same instructor.
+        His lectures on memory systems are interesting.
 
 - Other systems courses
     * CMU courses tend not to make starter code public, while Stanford and MIT are much more likely to have theirs available to the public.

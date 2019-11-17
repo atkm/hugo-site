@@ -17,13 +17,16 @@ Beyond CMU 15-213.
             Build a work distribution application on top of the protocol.
         2. Raft 
         3. Sharded key-value server
+    * Progress: done (labs, assignments, lectures).
+    * Other distributed systems courses: CMU 15-440 spring version, MIT 6.824.
 
 - [CMU 15-445 Intro to Database Systems](http://15445.courses.cs.cmu.edu/)
     * Great lecturer
-    * Video lectures from Fall 2017 as well as Fall 2018 are available.
+    * Video lectures from Fall 2017/2018 are available.
     * Lab assignment starter code is not available outside CMU.
     * Discusses details of database systems unlike Stanford's CS145.
     * This course is a pre-req to [CMU 15-721 Advanced Database Systems](http://15721.courses.cs.cmu.edu/), which covers in-memory systems. The first lecture of the advanced course (History of Database Systems) is a fun watch.
+    * Progress: watched lectures.
     * Alternatives are courses that use SimpleDB assignments (e.g. MIT 6.830, HMC CS133, U of W CSE444, Berkeley CS186).
 
 - [CMU 15-418 Parallel Computer Architecture](http://15418.courses.cs.cmu.edu/spring2016/)
@@ -33,6 +36,7 @@ Beyond CMU 15-213.
     * Recurring themes: locality, locality, locality, bandwidth limits, pipelining,
         hardware technologies that software programmers benefit from being aware of
     * Video lectures available
+    * Progress: watched lectures.
 
 - [ETH Design of Digital Circuits](https://safari.ethz.ch/digitaltechnik/spring2019)
     * The first third of the course covers some basics of circuits.
@@ -49,9 +53,8 @@ Beyond CMU 15-213.
     * OS: Stanford CS140, Harvard CS161 (OS/161), MIT 6.828 (JOS).
         CMU 15-410 doesn't make all projects available for non-CMU people.
         Text -- Anderson & Dahlin, Operating Systems: Principles and Practice
-    * Networks: CMU 15-441, Stanford CS144
-    * Compilers: CMU 15-411 (next: Fall 2019?), Stanford CS143, MIT 6.035, Harvard CS153
-    * Distributed systems: MIT 6.824
+    * Networks: CMU 15-441, Stanford CS144.
+    * Compilers: CMU 15-411 (next: Fall 2019?), Stanford CS143, MIT 6.035, Harvard CS153.
 
 ## Intro (Done)
 Courses that are usually covered in the 1st and 2nd years of a CS curriculum (ref: [CMU](https://www.csd.cs.cmu.edu/sample-undergraduate-course-sequence)). 

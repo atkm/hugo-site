@@ -3,7 +3,7 @@ title = "Learning Resources - Computer Science (Systems)"
 date = "2018-12-06"
 +++
 Freely available online resources that I've found useful for learning computer science, especially systems.
-Last updated on 2019-11-16.
+Last updated on 2019-11-23.
 
 ## Systems
 Beyond CMU 15-213.
@@ -38,15 +38,6 @@ Beyond CMU 15-213.
     * Video lectures available
     * Progress: watched lectures.
 
-- [ETH Design of Digital Circuits](https://safari.ethz.ch/digitaltechnik/spring2019)
-    * The first third of the course covers some basics of circuits.
-        The rest covers computer architecture topics: pipelining, out-of-order execution, branch prediction,
-            VLIW, systolic arrays, 
-    * Assignments are done with Verilog on an FPGA.
-        They are rudimentary compared with what is discussed in lectures---writing a single-cycle MIPS is the final assignment---and are pretty straightforward.
-        A follow-up [course](http://www.archive.ece.cmu.edu/~ece447/s15/doku.php?id=labs) has assignments on topics from the second half of the course (pipelining, branch prediction, cache coherence).
-    * Computer architecture [courses](https://people.inf.ethz.ch/omutlu/teaching.html) from the same instructor.
-        His lectures on memory systems are interesting.
 
 - Other systems courses
     * CMU courses tend not to make starter code public, while Stanford and MIT are much more likely to have theirs available to the public.
@@ -55,6 +46,40 @@ Beyond CMU 15-213.
         Text -- Anderson & Dahlin, Operating Systems: Principles and Practice
     * Networks: CMU 15-441, Stanford CS144.
     * Compilers: CMU 15-411 (next: Fall 2019?), Stanford CS143, MIT 6.035, Harvard CS153.
+
+## Computer Architecture
+
+- [ETH Design of Digital Circuits](https://safari.ethz.ch/digitaltechnik/spring2019)
+    * The first third of the course covers some basics of circuits.
+        The rest covers computer architecture topics: pipelining, out-of-order execution, branch prediction,
+            VLIW, systolic arrays, SIMD.
+        Lecture notes for MIT's 6.004 are good supplementary reading, as they go deeper into more basic topics.
+    * Assignments are done with Verilog on an FPGA.
+        They are rudimentary compared with what is discussed in lectures---writing a single-cycle MIPS is the final assignment.
+        A follow-up [course](http://www.archive.ece.cmu.edu/~ece447/s15/doku.php?id=labs) has assignments on topics from the second half of the course (pipelining, branch prediction, cache coherence).
+    * The assignments felt a bit too easy.
+        Most time was spent on learning the tools (verilog and IDE---I used Quartus).
+    * Progress: completed all labs, watched lectures.
+    * Computer architecture [courses](https://people.inf.ethz.ch/omutlu/teaching.html) from the same instructor.
+        His lectures on memory systems are interesting.
+
+- [MIT 6.004 Lecture Notes](https://computationstructures.org/lectures/info/info.html)
+    * The lectures start with representations of information at the analog level, and end with software topics like virtual memory, operating systems, and parallel computing.
+    * The course ties together areas in EECS.
+        The main topics of the course are digital circuits and computer organization, but it also touches on neighboring topics like:
+            - information entropy, error detection/correction
+            - a tiny bit of analog circuits through looking at the RAM
+            - circuit timing (throughout the circuits section of the lectures)
+            - circuit design tradeoffs (area, power consumption, throughput, latency)
+            - computability (FSM, turing machine)
+            - compilers, IR optimization
+            - OS scheduler
+            - cache coherence
+            - ... and more.
+    * It gives you a sense of how information theory, electronics, computer organization concepts, CS theory, and software concepts are part of one big thing.
+        Highly recommended!
+        
+
 
 ## Intro (Done)
 Courses that are usually covered in the 1st and 2nd years of a CS curriculum (ref: [CMU](https://www.csd.cs.cmu.edu/sample-undergraduate-course-sequence)). 

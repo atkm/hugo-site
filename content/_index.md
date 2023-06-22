@@ -1,6 +1,6 @@
 +++
-title = "About"
+title = "..."
 type = "page"
 +++
 
-I used to study dynamical systems and ergodic theory.
+[Posts]({{< ref "/posts" >}})

@@ -2,6 +2,7 @@
 title = "Learning Resources - Computer Science (Systems)"
 date = "2018-12-06"
 +++
+
 Freely available online resources that I've found useful for learning computer science, especially systems.
 Last updated on 2019-11-23.
 
@@ -26,7 +27,7 @@ Beyond CMU 15-213.
     * Lab assignment starter code is not available outside CMU.
     * Discusses details of database systems unlike Stanford's CS145.
     * This course is a pre-req to [CMU 15-721 Advanced Database Systems](http://15721.courses.cs.cmu.edu/), which covers in-memory systems. The first lecture of the advanced course (History of Database Systems) is a fun watch.
-    * Progress: watched lectures.
+    * Progress: in progress (1.5 labs left)
     * Alternatives are courses that use SimpleDB assignments (e.g. MIT 6.830, HMC CS133, U of W CSE444, Berkeley CS186).
 
 - [CMU 15-418 Parallel Computer Architecture](http://15418.courses.cs.cmu.edu/spring2016/)
@@ -38,6 +39,17 @@ Beyond CMU 15-213.
     * Video lectures available
     * Progress: watched lectures.
 
+- [UCSD CSE131 Compiler Construction](https://ucsd-cse131-f19.github.io/)
+    * Focus on the compiler backend.
+    * Unlike Stanford's [course](https://web.stanford.edu/class/cs143/), it skips lexical analysis and parsing.
+        I was interested in learning code generation and optimization, so this course worked well for me.
+    * Progress: done.
+
+- [MIT 6.172 Performance Engineering of Software Systems](https://ocw.mit.edu/courses/6-172-performance-engineering-of-software-systems-fall-2018/)
+    * Topics are different from CMU's 15-418.
+        Labs teach the mechanics (~boring details) of doing performance work.
+    * Working with cilk and llvm sounds interesting.
+    * Progress: watched lectures, done some labs.
 
 - Other systems courses
     * CMU courses tend not to make starter code public, while Stanford and MIT are much more likely to have theirs available to the public.
@@ -78,7 +90,6 @@ Beyond CMU 15-213.
             - ... and more.
     * It gives you a sense of how information theory, electronics, computer organization concepts, CS theory, and software concepts are part of one big thing.
         Highly recommended!
-        
 
 
 ## Intro (Done)
@@ -97,16 +108,16 @@ Courses that are usually covered in the 1st and 2nd years of a CS curriculum (re
     * [Video lectures](https://scs.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%22b96d90ae-9871-4fae-91e2-b1627b43e25e%22)
     * Alternatives are Stanford CS 107 & 110 (which teach from the same textbook) and Berkeley 61C.
 
-- MIT 6.005 Software Construction (OCW)
-    * Software engineering best practices. What constitutes a good specification and test?
-    Immutability. Interfaces. Equality of types. Specification and tests for abstract data types and concurrent programs.
-
 - Algorithms Part 1 & 2 by Princeton (Coursera)
     * A first course on algorithms, which does not cover analyses of algorithms in depth.
     * The instructor sprinkles historical overview, "war stories", and applications of algorithms in each of his lectures, which are entertaining.
     * Good set of assignments to work through. They don't merely ask you to write a data structure introduced in lecture; each assignment requires some problem solving, such as figuring out what data structures should be used to achieve given performance requirements.
     * The assignments are the same as Princeton's [COS226](http://www.cs.princeton.edu/courses/archive/fall18/cos226/syllabus.php).
     * Each assignment (reading + coding) takes one day to complete, so 11 days in total.
+
+- MIT 6.005 Software Construction (OCW)
+    * Software engineering best practices. What constitutes a good specification and test?
+    Immutability. Interfaces. Equality of types. Specification and tests for abstract data types and concurrent programs.
 
 - Functional Programming in Scala Specialization (Coursera)
     * Assignments are fun (i.e. moderately challenging) unlike most Coursera courses.

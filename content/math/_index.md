@@ -1,7 +1,13 @@
 +++
-title = "Teaching"
+title = "Math"
 layout = "page"
 +++
+
+I studied [dynamical systems and ergodic theory](https://science.psu.edu/math/research/dynsys) at Penn State University.
+
+* [Master's thesis on Furstenberg's conjecture](/projects/masters-paper.pdf)
+
+# Teaching
 
 * [Math 141 (Summer 2016)](/teaching/141-sum16)
 * [Math 017 (Spring 2016)](/teaching/017-sp16)

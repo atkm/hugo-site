@@ -4,8 +4,6 @@ date = "2018-10-20"
 mathjax = true
 +++
 
-"Curse of Dimensionality", in the sense of Bellman as well as in machine learning.
-
 ## Geometry
 In \\( \mathbb{R}^n \\) where \\( n \\) is large,
 

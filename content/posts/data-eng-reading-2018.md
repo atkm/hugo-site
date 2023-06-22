@@ -1,10 +1,7 @@
 +++
-title = "Articles---mainly about Streaming Systems"
+title = "Some data engineering reading"
 date = "2018-08-21"
 +++
-
-Articles and talks that I referred to while working on the taxi data project.
-Published here as a note to myself.
 
 ## Model Serving
 - [FLIP-23](https://cwiki.apache.org/confluence/display/FLINK/FLIP-23+-+Model+Serving).

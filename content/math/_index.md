@@ -5,6 +5,8 @@ layout = "page"
 
 I studied [dynamical systems and ergodic theory](https://science.psu.edu/math/research/dynsys) at Penn State University.
 
+I wrote:
+
 * [Master's thesis on Furstenberg's conjecture](/projects/masters-paper.pdf)
 
 # Teaching

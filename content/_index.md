@@ -1,5 +1,5 @@
 +++
-title = "..."
+title = ".."
 type = "page"
 +++
 

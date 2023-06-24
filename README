@@ -1,3 +1,6 @@
+Run `./deploy.sh` to push the submodule at `/public` to atkm.github.io repo.
+May have to rm `/public/*` before running the deploy script.
+
 TODO:
 - favicon
 - move teaching/COURSE_NAME/{lecnotes, miniexams, etc} to templates to use variables and flow control.

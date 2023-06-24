@@ -1,5 +1,5 @@
 +++
-title = "Optimization, Stats, and ML"
+title = "Learning Optimization, Stats, and ML"
 date = "2023-06-23"
 +++
 

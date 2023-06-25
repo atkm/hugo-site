@@ -4,6 +4,8 @@ date = "2017-08-04"
 mathjax = true
 +++
 
+I should come up with a solution that uses optimization instead of doing regression twice.
+
 ### Introduction
 The model we consider is \\(Y_i = \alpha + \beta x_i + \epsilon_i\\), where \\( \epsilon_i \\) are uncorrelated, and \\( \mathbb{V}(\epsilon_i) \\) depends on \\( i \\).
 We discuss two solutions to finding estimators of \\( \alpha, \beta \\).

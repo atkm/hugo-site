@@ -1,9 +1,9 @@
 +++
-title = "Learning Resources - Computer Science (Systems)"
+title = "Learning CS Systems"
 date = "2018-12-06"
 +++
 
-Freely available online resources that I've found useful for learning computer science, especially systems.
+Online resources that I've found useful for learning computer science, especially systems.
 Last updated on 2019-11-23.
 
 ## Systems
@@ -51,7 +51,7 @@ Beyond CMU 15-213.
     * Working with cilk and llvm sounds interesting.
     * Progress: watched lectures, done some labs.
 
-- Other systems courses
+- Other systems courses (didn't do)
     * CMU courses tend not to make starter code public, while Stanford and MIT are much more likely to have theirs available to the public.
     * OS: Stanford CS140, Harvard CS161 (OS/161), MIT 6.828 (JOS).
         CMU 15-410 doesn't make all projects available for non-CMU people.
@@ -115,10 +115,6 @@ Courses that are usually covered in the 1st and 2nd years of a CS curriculum (re
     * The assignments are the same as Princeton's [COS226](http://www.cs.princeton.edu/courses/archive/fall18/cos226/syllabus.php).
     * Each assignment (reading + coding) takes one day to complete, so 11 days in total.
 
-- MIT 6.005 Software Construction (OCW)
-    * Software engineering best practices. What constitutes a good specification and test?
-    Immutability. Interfaces. Equality of types. Specification and tests for abstract data types and concurrent programs.
-
 - Functional Programming in Scala Specialization (Coursera)
     * Assignments are fun (i.e. moderately challenging) unlike most Coursera courses.
     * Course 1 & 2 comprise an introduction to functional programming and the Scala type system.
@@ -132,14 +128,15 @@ Courses that are usually covered in the 1st and 2nd years of a CS curriculum (re
 - [Practical Concurrent and Parallel Programming](http://www.itu.dk/people/sestoft/itu/PCPP/E2016/)
     * Covers most of "Java Concurrency in Practice" by Goetz with a Java 8 twist, and a bit of "The Art of Multiprocessor Programming".
     * Each week comes with a simple coding assignment, which takes about an hour.
-    11 assignments in total.
+        11 assignments in total.
 
 - [Sophomoric Parallelism and Concurrency](https://homes.cs.washington.edu/~djg/teachingMaterials/spac/) (Dan Grossman, U of W)
     * A short introductory course on parallel data structures and concurrency using Java's fork-join framework.
-    * Homework problems are food for thought.
+    * Good homework problems.
 
 - Computer Networks (David Wetherall, U of W)
     * An overview of networking from the physical layer all the way up to the application layer.
     * [Video lectures](http://media.pearsoncmg.com/ph/streaming/esm/tanenbaum5e_videonotes/tanenbaum_videoNotes.html).
     There used to be a course on Coursera based on the same videos.
     * The lecturer is an author of "Computer Networks" (5th ed).
+    * Progress: watched lectures.

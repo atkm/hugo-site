@@ -30,10 +30,15 @@ Probably for historical reasons, convex optimization is taught in EE, and intege
     Knowing some stats theory would have been useful, too, as some problems came from stats.
 - Progress: mostly done. Skipped some problems. Would be good to go through it again.
 
-[Stanford CS261A A Second Course in Algorithms](https://timroughgarden.org/w16/w16.html)
+[Stanford CS261 A Second Course in Algorithms](https://timroughgarden.org/w16/w16.html)
 - Came across this course when I was looking for references on LP duality.
-    The course goes through some algorithmic problems that 
+    The way this course presents duality is:
+    1. Go through some problems that can be solved with LP (e.g. max-flow), but develop problem-specific algorithms instead.
+    2. Develop the duals of the problems, without appealing to LP duality.
+    3. Show that the problem-specific primal and dual formulations maps to LP duality.
+- Even when the lectures do use LP duality to derive the dual, they spent a good amount of time interpreting the dual formulations in terms of the problem context.
 - The lecture notes are well-written.
+    Video lectures are available, but I opted for reading the notes, so I can check arguments as I read.
 - Would like to get through the exercises one day.
 - Progress: finished lectures.
 
@@ -63,15 +68,20 @@ I can't find a course that talks about stochastic methods, like hidden markov mo
 
 ## Stats / ML
 
-I should learn inference and regression.
+I should learn [inference](https://web.stanford.edu/class/stats200/) and [regression](https://web.stanford.edu/class/stats203/).
 [Stanford's STATS202](https://web.stanford.edu/class/stats202/intro.html) looks good for intro to ML.
+
+[Stanford STAT191 Introduction to Applied Statistics](https://web.stanford.edu/class/stats191/)
+- Progress: 1/2 done.
 
 [MIT 6.041 Probabilistic Systems Analysis and Applied Probability](https://ocw.mit.edu/courses/6-041-probabilistic-systems-analysis-and-applied-probability-fall-2010/)
 - One thing that I've come to understand after taking several EE courses is that I should learn math from EE if I want to learn applicable math.
+    So I picked this course as a probability refresher instead of one from a math or stats department.
     This course's emphasis is on actually computing probability (like, getting a concrete real number at the end), which is different from probability courses I took from math departments.
     I feel a lot more comfortable modelling probabilistic systems after going through this course and seeing the pitfalls.
-    Learning some techniques to compute probabilities that aren't trivial otherwise was another good thing about this course.
+    Techniques to compute probabilities that aren't trivial otherwise were another good course content.
 - Progress: 3/4 done.
+- [Stanford's EE178](https://ee178.stanford.edu/) is a similar course. This one comes with coding problems.
 
 ## Algorithms
 

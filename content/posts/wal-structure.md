@@ -1,6 +1,7 @@
 +++
 title = "On-disk structures of write-ahead log (WAL)"
 date = "2024-01-12"
+draft = true
 +++
 
 ## 1. How does one store WAL on disk?
@@ -99,6 +100,12 @@ I don't see how LSN can remain to be an offset into the (uncompressed) WAL strea
 It doesn't make sense to speak of an offset into compressed data.
 Also, compression throws off the segment number computation.
 I would think the LSN needs to be (logically) the union of the segment number, the offset of the compressed page within the segment, and the offset into the uncompressed page.
+
+### 3-5. Let LSN be contiguous integers
+
+An alternative to the approach described in 3-1 is to just use contiguous integers.
+To do this, the stream needs to be read sequentially to build an in-memory mapping of LSNs to offsets.
+In this approach, you don't know how to seek to a particular record until you see it, but this isn't a problem because you replay the records sequentially front-to-back.
 
 ## 4. LevelDB/RocksDB format
 

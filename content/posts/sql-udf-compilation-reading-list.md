@@ -3,9 +3,9 @@ title = "Reading list: UDF compilation"
 date = "2024-01-21"
 +++
 
-Results discussed in the "Server-side Logic Execution" [lecture](https://youtu.be/DRFuyLd29eA?si=2sKYDwJCRTc83eJm) of CMU 15-721 were interesting.
+Results on UDF compilation discussed in the "Server-side Logic Execution" [lecture](https://youtu.be/DRFuyLd29eA?si=2sKYDwJCRTc83eJm) of CMU 15-721 were interesting.
 
-- The main paper is: K. Ramachandra, et al., _Froid: Optimization of Imperative Programs in a Relational Database_ (VLDB, 2017) https://arxiv.org/abs/1712.00498
+- The first result in this area was: K. Ramachandra, et al., _Froid: Optimization of Imperative Programs in a Relational Database_ (VLDB, 2017) https://arxiv.org/abs/1712.00498
     * A subset of UDF can be compiled to SQL.
         Then standard query optimization routines apply.
     * _Decorrelation of user defined function invocations in queries_ (2014, [link](https://ieeexplore.ieee.org/document/6816679)) is what the Froid paper is based on.
